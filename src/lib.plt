@@ -8,9 +8,10 @@ component VideoPlayer {
     Column {
         gap: 8
         style {
-            background: "#1e1e2e"
-            borderRadius: "12px"
-            padding: 16
+            background: "#0f172a"
+            borderRadius: "16px"
+            padding: 20
+            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.35)"
         }
         Video {
             src: source
@@ -31,9 +32,10 @@ component AudioPlayer {
     Column {
         gap: 8
         style {
-            background: "#1e1e2e"
-            borderRadius: "12px"
-            padding: 16
+            background: "#0f172a"
+            borderRadius: "16px"
+            padding: 20
+            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.35)"
         }
         Audio {
             src: source
@@ -52,8 +54,10 @@ component ImageCard {
         padding: 12
         style {
             background: "#ffffff"
-            borderRadius: "12px"
-            border: "1px solid #e5e7eb"
+            borderRadius: "16px"
+            border: "1px solid #e2e8f0"
+            boxShadow: "0 4px 16px rgba(15, 23, 42, 0.08)"
+            padding: 16
         }
         Column {
             gap: 8
@@ -72,7 +76,10 @@ component SearchBar {
     Row {
         gap: 8
         style {
-            padding: 8
+            background: "#ffffff"
+            border: "1px solid #e2e8f0"
+            borderRadius: "999px"
+            padding: 10
         }
         Input {
             value: value
@@ -89,7 +96,10 @@ component ProgressBar {
     Column {
         gap: 4
         style {
-            padding: 8
+            background: "#ffffff"
+            border: "1px solid #e2e8f0"
+            borderRadius: "12px"
+            padding: 16
         }
         Text label
         Progress {
@@ -105,7 +115,9 @@ component ToggleRow {
     Row {
         gap: 8
         style {
-            padding: 8
+            background: "#f1f5f9"
+            borderRadius: "12px"
+            padding: 12
         }
         Switch {
             checked: checked
@@ -120,7 +132,9 @@ component VolumeSlider {
     Row {
         gap: 8
         style {
-            padding: 8
+            background: "#f1f5f9"
+            borderRadius: "12px"
+            padding: 12
         }
         Text "Volume"
         Slider {
@@ -138,7 +152,10 @@ component LoadingOverlay {
     Column {
         gap: 8
         style {
-            padding: 24
+            background: "#ffffff"
+            borderRadius: "16px"
+            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.15)"
+            padding: 32
             alignItems: "center"
         }
         Spinner
@@ -159,9 +176,10 @@ component AlertDialog {
         Column {
             gap: 8
             style {
-                padding: 20
                 background: "#ffffff"
-                borderRadius: "12px"
+                borderRadius: "16px"
+                boxShadow: "0 24px 64px rgba(15, 23, 42, 0.25)"
+                padding: 24
             }
             Heading title
             Text message
@@ -173,3 +191,4 @@ component AlertDialog {
         }
     }
 }
+
