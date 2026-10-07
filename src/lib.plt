@@ -8,10 +8,10 @@ component VideoPlayer {
     Column {
         gap: 8
         style {
-            background: "#0f172a"
-            borderRadius: "16px"
+            background: "var(--plt-surface)"
+            borderRadius: "var(--plt-radius)"
             padding: 20
-            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.35)"
+            boxShadow: "var(--plt-shadow)"
         }
         Video {
             src: source
@@ -32,10 +32,10 @@ component AudioPlayer {
     Column {
         gap: 8
         style {
-            background: "#0f172a"
-            borderRadius: "16px"
+            background: "var(--plt-surface)"
+            borderRadius: "var(--plt-radius)"
             padding: 20
-            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.35)"
+            boxShadow: "var(--plt-shadow)"
         }
         Audio {
             src: source
@@ -53,10 +53,10 @@ component ImageCard {
     Card {
         padding: 12
         style {
-            background: "#ffffff"
-            borderRadius: "16px"
-            border: "1px solid #e2e8f0"
-            boxShadow: "0 4px 16px rgba(15, 23, 42, 0.08)"
+            background: "var(--plt-surface)"
+            borderRadius: "var(--plt-radius)"
+            border: "1px solid var(--plt-border)"
+            boxShadow: "var(--plt-shadow)"
             padding: 16
         }
         Column {
@@ -76,8 +76,8 @@ component SearchBar {
     Row {
         gap: 8
         style {
-            background: "#ffffff"
-            border: "1px solid #e2e8f0"
+            background: "var(--plt-surface)"
+            border: "1px solid var(--plt-border)"
             borderRadius: "999px"
             padding: 10
         }
@@ -96,9 +96,9 @@ component ProgressBar {
     Column {
         gap: 4
         style {
-            background: "#ffffff"
-            border: "1px solid #e2e8f0"
-            borderRadius: "12px"
+            background: "var(--plt-surface)"
+            border: "1px solid var(--plt-border)"
+            borderRadius: "var(--plt-radius)"
             padding: 16
         }
         Text label
@@ -115,8 +115,8 @@ component ToggleRow {
     Row {
         gap: 8
         style {
-            background: "#f1f5f9"
-            borderRadius: "12px"
+            background: "var(--plt-surface-2)"
+            borderRadius: "var(--plt-radius)"
             padding: 12
         }
         Switch {
@@ -132,8 +132,8 @@ component VolumeSlider {
     Row {
         gap: 8
         style {
-            background: "#f1f5f9"
-            borderRadius: "12px"
+            background: "var(--plt-surface-2)"
+            borderRadius: "var(--plt-radius)"
             padding: 12
         }
         Text "Volume"
@@ -152,9 +152,9 @@ component LoadingOverlay {
     Column {
         gap: 8
         style {
-            background: "#ffffff"
-            borderRadius: "16px"
-            boxShadow: "0 12px 32px rgba(15, 23, 42, 0.15)"
+            background: "var(--plt-surface)"
+            borderRadius: "var(--plt-radius)"
+            boxShadow: "var(--plt-shadow)"
             padding: 32
             alignItems: "center"
         }
@@ -176,9 +176,9 @@ component AlertDialog {
         Column {
             gap: 8
             style {
-                background: "#ffffff"
-                borderRadius: "16px"
-                boxShadow: "0 24px 64px rgba(15, 23, 42, 0.25)"
+                background: "var(--plt-surface)"
+                borderRadius: "var(--plt-radius)"
+                boxShadow: "var(--plt-shadow)"
                 padding: 24
             }
             Heading title
@@ -191,4 +191,3 @@ component AlertDialog {
         }
     }
 }
-
