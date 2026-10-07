@@ -8,8 +8,8 @@ component VideoPlayer {
     Column {
         gap: 8
         style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card, var(--plt-surface))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             padding: 20
             boxShadow: "var(--plt-shadow)"
         }
@@ -32,8 +32,8 @@ component AudioPlayer {
     Column {
         gap: 8
         style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card, var(--plt-surface))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             padding: 20
             boxShadow: "var(--plt-shadow)"
         }
@@ -53,9 +53,9 @@ component ImageCard {
     Card {
         padding: 12
         style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
-            border: "1px solid var(--plt-border)"
+            background: "var(--plt-card, var(--plt-surface))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
+            border: "1px solid var(--plt-card-border, var(--plt-border))"
             boxShadow: "var(--plt-shadow)"
             padding: 16
         }
@@ -76,8 +76,8 @@ component SearchBar {
     Row {
         gap: 8
         style {
-            background: "var(--plt-surface)"
-            border: "1px solid var(--plt-border)"
+            background: "var(--plt-card, var(--plt-surface))"
+            border: "1px solid var(--plt-card-border, var(--plt-border))"
             borderRadius: "999px"
             padding: 10
         }
@@ -96,9 +96,9 @@ component ProgressBar {
     Column {
         gap: 4
         style {
-            background: "var(--plt-surface)"
-            border: "1px solid var(--plt-border)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card, var(--plt-surface))"
+            border: "1px solid var(--plt-card-border, var(--plt-border))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             padding: 16
         }
         Text label
@@ -115,8 +115,8 @@ component ToggleRow {
     Row {
         gap: 8
         style {
-            background: "var(--plt-surface-2)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card-alt, var(--plt-surface-2))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             padding: 12
         }
         Switch {
@@ -132,8 +132,8 @@ component VolumeSlider {
     Row {
         gap: 8
         style {
-            background: "var(--plt-surface-2)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card-alt, var(--plt-surface-2))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             padding: 12
         }
         Text "Volume"
@@ -152,8 +152,8 @@ component LoadingOverlay {
     Column {
         gap: 8
         style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
+            background: "var(--plt-card, var(--plt-surface))"
+            borderRadius: "var(--plt-card-radius, var(--plt-radius))"
             boxShadow: "var(--plt-shadow)"
             padding: 32
             alignItems: "center"
@@ -176,8 +176,8 @@ component AlertDialog {
         Column {
             gap: 8
             style {
-                background: "var(--plt-surface)"
-                borderRadius: "var(--plt-radius)"
+                background: "var(--plt-card, var(--plt-surface))"
+                borderRadius: "var(--plt-card-radius, var(--plt-radius))"
                 boxShadow: "var(--plt-shadow)"
                 padding: 24
             }
