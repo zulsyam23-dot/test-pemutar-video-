@@ -78,8 +78,8 @@ component SearchBar {
         style {
             background: "var(--plt-card, var(--plt-surface))"
             border: "1px solid var(--plt-card-border, var(--plt-border))"
-            borderRadius: "var(--plt-card-radius, 999px)"
-            padding: "var(--plt-card-padding, 10px)"
+            borderRadius: "var(--plt-search-radius, 999px)"
+            padding: "var(--plt-search-padding, 10px)"
         }
         Input {
             value: value
