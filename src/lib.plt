@@ -7,6 +7,11 @@ component VideoPlayer {
 
     Column {
         gap: 8
+        style {
+            background: "#1e1e2e"
+            borderRadius: "12px"
+            padding: 16
+        }
         Video {
             src: source
             poster: poster
@@ -25,6 +30,11 @@ component AudioPlayer {
 
     Column {
         gap: 8
+        style {
+            background: "#1e1e2e"
+            borderRadius: "12px"
+            padding: 16
+        }
         Audio {
             src: source
             controls: true
@@ -40,6 +50,11 @@ component ImageCard {
 
     Card {
         padding: 12
+        style {
+            background: "#ffffff"
+            borderRadius: "12px"
+            border: "1px solid #e5e7eb"
+        }
         Column {
             gap: 8
             Image {
@@ -56,6 +71,9 @@ component SearchBar {
 
     Row {
         gap: 8
+        style {
+            padding: 8
+        }
         Input {
             value: value
             placeholder: placeholder
@@ -70,6 +88,9 @@ component ProgressBar {
 
     Column {
         gap: 4
+        style {
+            padding: 8
+        }
         Text label
         Progress {
             value: value
@@ -83,6 +104,9 @@ component ToggleRow {
 
     Row {
         gap: 8
+        style {
+            padding: 8
+        }
         Switch {
             checked: checked
         }
@@ -95,6 +119,9 @@ component VolumeSlider {
 
     Row {
         gap: 8
+        style {
+            padding: 8
+        }
         Text "Volume"
         Slider {
             min: 0.0
@@ -110,6 +137,10 @@ component LoadingOverlay {
 
     Column {
         gap: 8
+        style {
+            padding: 24
+            alignItems: "center"
+        }
         Spinner
         Text label
     }
@@ -127,6 +158,11 @@ component AlertDialog {
         open: shown
         Column {
             gap: 8
+            style {
+                padding: 20
+                background: "#ffffff"
+                borderRadius: "12px"
+            }
             Heading title
             Text message
             Button "Tutup" {
