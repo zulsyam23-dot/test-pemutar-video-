@@ -7,12 +7,6 @@ component VideoPlayer {
 
     Column {
         gap: 8
-        style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
-            padding: 20
-            boxShadow: "var(--plt-shadow)"
-        }
         Video {
             src: source
             poster: poster
@@ -31,12 +25,6 @@ component AudioPlayer {
 
     Column {
         gap: 8
-        style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
-            padding: 20
-            boxShadow: "var(--plt-shadow)"
-        }
         Audio {
             src: source
             controls: true
@@ -52,13 +40,6 @@ component ImageCard {
 
     Card {
         padding: 12
-        style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
-            border: "1px solid var(--plt-border)"
-            boxShadow: "var(--plt-shadow)"
-            padding: 16
-        }
         Column {
             gap: 8
             Image {
@@ -75,12 +56,6 @@ component SearchBar {
 
     Row {
         gap: 8
-        style {
-            background: "var(--plt-surface)"
-            border: "1px solid var(--plt-border)"
-            borderRadius: "var(--plt-radius)"
-            padding: "var(--plt-pad)"
-        }
         Input {
             value: value
             placeholder: placeholder
@@ -95,12 +70,6 @@ component ProgressBar {
 
     Column {
         gap: 4
-        style {
-            background: "var(--plt-surface)"
-            border: "1px solid var(--plt-border)"
-            borderRadius: "var(--plt-radius)"
-            padding: 16
-        }
         Text label
         Progress {
             value: value
@@ -114,11 +83,6 @@ component ToggleRow {
 
     Row {
         gap: 8
-        style {
-            background: "var(--plt-surface-2)"
-            borderRadius: "var(--plt-radius)"
-            padding: 12
-        }
         Switch {
             checked: checked
         }
@@ -131,11 +95,6 @@ component VolumeSlider {
 
     Row {
         gap: 8
-        style {
-            background: "var(--plt-surface-2)"
-            borderRadius: "var(--plt-radius)"
-            padding: 12
-        }
         Text "Volume"
         Slider {
             min: 0.0
@@ -151,13 +110,6 @@ component LoadingOverlay {
 
     Column {
         gap: 8
-        style {
-            background: "var(--plt-surface)"
-            borderRadius: "var(--plt-radius)"
-            boxShadow: "var(--plt-shadow)"
-            padding: 32
-            alignItems: "center"
-        }
         Spinner
         Text label
     }
@@ -175,12 +127,6 @@ component AlertDialog {
         open: shown
         Column {
             gap: 8
-            style {
-                background: "var(--plt-surface)"
-                borderRadius: "var(--plt-radius)"
-                boxShadow: "var(--plt-shadow)"
-                padding: 24
-            }
             Heading title
             Text message
             Button "Tutup" {
